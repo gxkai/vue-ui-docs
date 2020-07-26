@@ -9,8 +9,8 @@ import "highlight.js/styles/color-brewer.css";
 import VcSnippet from "./components/snippet";
 Vue.component("vc-snippet", VcSnippet);
 
-import VueUIDocs from "../src/index";
-Vue.use(VueUIDocs);
+import IkeaUIDocs from "../src/index";
+Vue.use(IkeaUIDocs);
 
 new Vue({
   router,

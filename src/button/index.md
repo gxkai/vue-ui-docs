@@ -4,12 +4,12 @@
 
 ## 基础用法
 
-:::snippet 通过 `v-button` 标签初始化按钮。
+:::snippet 通过 `i-button` 标签初始化按钮。
 
 ```html
 <template>
   <div>
-    <v-button>Default</v-button>
+    <i-button>Default</i-button>
   </div>
 </template>
 ```
@@ -23,7 +23,7 @@
 ```html
 <template>
   <div>
-    <v-button text="Default"></v-button>
+    <i-button text="Default"></i-button>
   </div>
 </template>
 ```
@@ -37,7 +37,7 @@
 ```html
 <template>
   <div>
-    <v-button text="Default" @click="handleButtonClick"></v-button>
+    <i-button text="Default" @click="handleButtonClick"></i-button>
   </div>
 </template>
 

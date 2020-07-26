@@ -1,4 +1,4 @@
-# VUE-UI-DOCS
+# Ikea-UI-DOCS
 
 vue 2.x 组件库自动解析 `Markdown` 示例，自动构建发布到 `github-pages` 和 `npm`
 
@@ -21,12 +21,12 @@ vue 2.x 组件库自动解析 `Markdown` 示例，自动构建发布到 `github-
 代码示例格式：
 
 ````markdown
-:::snippet 通过 `v-button` 标签初始化按钮。
+:::snippet 通过 `i-button` 标签初始化按钮。
 
 ```html
 <template>
   <div>
-    <v-button>Default</v-button>
+    <i-button>Default</i-button>
   </div>
 </template>
 ```
@@ -138,8 +138,8 @@ export default {
 
 ```html
 <template>
-  <button v-bind="$attrs" class="v-button" type="button" @click="handleClick">
-    <span class="v-buttov--text">
+  <button i-bind="$attrs" class="i-button" type="button" @click="handleClick">
+    <span class="i-buttoi--text">
       <slot>{{ text }}</slot>
     </span>
   </button>
@@ -160,7 +160,7 @@ export default {
 </script>
 
 <style lang="scss">
-  .v-button {
+  .i-button {
     position: relative;
     display: inline-block;
     font-weight: 400;
@@ -245,7 +245,7 @@ Vue.use(VueUIDocs);
         <img alt="code" :src="codeIconSrc" />
       </span>
     </div>
-    <div v-show="showCode" class="vc-snippet--code">
+    <div i-show="showCode" class="vc-snippet--code">
       <!-- 示例代码高亮显示 -->
       <slot name="code" />
     </div>
@@ -508,12 +508,12 @@ module.exports = {
 
 ## 基础用法
 
-:::snippet 通过 `v-button` 标签初始化按钮。
+:::snippet 通过 `i-button` 标签初始化按钮。
 
 ```html
 <template>
   <div>
-    <v-button>Default</v-button>
+    <i-button>Default</i-button>
   </div>
 </template>
 ```
@@ -527,7 +527,7 @@ module.exports = {
 ```html
 <template>
   <div>
-    <v-button text="Default"></v-button>
+    <i-button text="Default"></i-button>
   </div>
 </template>
 ```
@@ -541,7 +541,7 @@ module.exports = {
 ```html
 <template>
   <div>
-    <v-button text="Default" @click="handleButtonClick"></v-button>
+    <i-button text="Default" @click="handleButtonClick"></i-button>
   </div>
 </template>
 

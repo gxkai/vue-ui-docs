@@ -1,3 +1,4 @@
+/*eslint-disable*/
 const MarkdownIt = require("markdown-it");
 const MarkdownItContainer = require("markdown-it-container");
 const VueTemplateComplier = require("vue-template-compiler");

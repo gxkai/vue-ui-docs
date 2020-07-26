@@ -1,19 +1,26 @@
 {
-  "name": "vue-ui-docs",
-  "version": "1.2.0",
+  "name": "ikea-ui-docs",
+  "version": "0.1.0",
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
     "release": "vue-cli-service build --dest lib --target lib src/index.js",
     "lint": "vue-cli-service lint"
   },
-  "main": "lib/vue-ui-docs.common.js",
+  "main": "lib/ikea-ui-docs.common.js",
   "dependencies": {
     "core-js": "^3.6.4",
     "vue": "^2.6.11",
-    "vue-router": "^3.1.6"
+    "vue-router": "^3.1.6",
+    "vue-class-component": "^7.2.3",
+    "vue-property-decorator": "^8.4.2"
   },
   "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^2.33.0",
+    "@typescript-eslint/parser": "^2.33.0",
+    "typescript": "~3.9.3",
+    "@vue/eslint-config-typescript": "^5.0.2",
+    "@vue/cli-plugin-typescript": "~4.4.0",
     "@vue/cli-plugin-babel": "^4.3.0",
     "@vue/cli-plugin-eslint": "^4.3.0",
     "@vue/cli-plugin-router": "^4.3.0",
@@ -39,11 +46,11 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/kitorv/vue-ui-docs.git"
+    "url": "https://github.com/gxkai/ikea-ui-docs.git"
   },
-  "homepage": "https://kitorv.github.io/vue-ui-docs/",
+  "homepage": "https://gxkai.github.io/ikea-ui-docs/",
   "bugs": {
-    "url": "https://github.com/kitorv/vue-ui-docs/issues"
+    "url": "https://github.com/gxkai/ikea-ui-docs/issues"
   },
   "eslintConfig": {
     "root": true,
@@ -53,10 +60,12 @@
     "extends": [
       "plugin:vue/essential",
       "eslint:recommended",
-      "@vue/prettier"
+      "@vue/prettier",
+      "@vue/typescript/recommended",
+      "@vue/prettier/@typescript-eslint"
     ],
     "parserOptions": {
-      "parser": "babel-eslint"
+      "ecmaVersion": 2020
     },
     "rules": {}
   },

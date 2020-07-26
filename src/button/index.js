@@ -1,7 +1,8 @@
 import Button from "./src/button";
+import { Prefix } from "@/prefix";
 
 Button.install = Vue => {
-  Vue.component(Button.name, Button);
+  Vue.component(Prefix + Button.name, Button);
 };
 
 export default Button;

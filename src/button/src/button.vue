@@ -6,18 +6,17 @@
   </button>
 </template>
 
-<script>
-export default {
-  name: "VButton",
-  props: {
-    text: String
-  },
-  methods: {
-    handleClick(event) {
-      this.$emit("click", event);
-    }
+<script lang="ts">
+import { Vue, Component, Prop } from "vue-property-decorator";
+
+@Component
+export default class Button extends Vue {
+  @Prop()
+  text!: string;
+  handleClick(event: MouseEvent) {
+    this.$emit("click", event);
   }
-};
+}
 </script>
 
 <style lang="scss">

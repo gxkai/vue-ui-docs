@@ -2,14 +2,14 @@
 
 ## 介绍
 
-vue-ui-docs 基于 vue.js 2.x 组件库。
+ikea-ui-docs 基于 vue.js 2.x 组件库。
 
 ## 安装
 
 项目直接使用 `npm` 命令安装。
 
 ```bash
-npm i vue-ui-docs -S
+npm i ikea-ui-docs -S
 ```
 
 ## 引入
@@ -17,9 +17,9 @@ npm i vue-ui-docs -S
 入口文件引入。
 
 ```javascript
-import VueUIDocs from "vue-ui-docs";
-import "vue-ui-docs/lib/vue-ui-docs.css";
-Vue.use(VueUIDocs);
+import IkeaUIDocs from "ikea-ui-docs";
+import "Ikea-ui-docs/lib/ikea-ui-docs.css";
+Vue.use(IkeaUIDocs);
 ```
 
 ## 示例
@@ -28,6 +28,6 @@ Vue.use(VueUIDocs);
 
 ```html
 <template>
-  <v-button>Button</v-button>
+  <i-button>Button</i-button>
 </template>
 ```
